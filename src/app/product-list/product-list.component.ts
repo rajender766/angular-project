@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  name = 'Rajender';
+  //name = 'Rajender';
+
+  addToCart: number = 0;
+
   product = {
     name: 'iPhone 13',
     price: 1000,
@@ -18,5 +21,21 @@ export class ProductListComponent {
 
   getDicountPrice() {
     return this.product.price - this.product.disPrice;
+  }
+
+  onNameChange(e: any) {
+    // this.name = e.target.value;
+  }
+
+  incrementCartVlaue() {
+    if (this.addToCart < this.product.instock) {
+      this.addToCart++;
+    }
+  }
+
+  decrementCartVlaue() {
+    if (this.addToCart > 0) {
+      this.addToCart--;
+    }
   }
 }

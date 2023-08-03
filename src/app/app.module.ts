@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.cpmponent';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { TopMenuComponent } from './header/top-menu/top-menu.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { SearchComponent } from './product-list/search/search.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     TopHeaderComponent,
     TopMenuComponent,
     ProductListComponent,
+    SearchComponent,
   ],
   imports: [BrowserModule],
   providers: [],
