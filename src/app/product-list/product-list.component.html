@@ -1,14 +1,21 @@
-
-<img class="pro-img" src="/assets/images/{{product.pImage}}" alt="productImg" />
-<p>Name : {{product.name}}</p>
-<p>Price :{{'$' + product.price}}</p>
-<p>Color : {{product.color}}</p>
-<p>Disscount Price : {{'$' +product.disPrice}}</p>
-<p>Net Price : {{'$' + (getDicountPrice().toFixed(1))}}</p>
-<p>{{product.instock > 0 ? 'Only  ' + product.instock +"   items left" : 'Not in Stock'}}</p>
+<img
+  class="pro-img"
+  src="/assets/images/{{ product.pImage }}"
+  alt="productImg"
+/>
+<p>Name : {{ product.name }}</p>
+<p>Price :{{ "$" + product.price }}</p>
+<p>Color : {{ product.color }}</p>
+<p>Disscount Price : {{ "$" + product.disPrice }}</p>
+<p>Net Price : {{ "$" + getDicountPrice().toFixed(1) }}</p>
+<p>
+  {{
+    product.instock > 0
+      ? "Only  " + product.instock + "   items left"
+      : "Not in Stock"
+  }}
+</p>
 <button [disabled]="!(product.instock > 0)">Buy Now</button>
 <br />
 <br />
 <input bind-value="name" [attr.aria-hidden]="" />
-
-

@@ -1,0 +1,15 @@
+.main-cont {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-head {
+  color: green;
+  font-size: 30px;
+  font-family: "Concert One", cursive;
+}
+
+.main-anchot {
+  margin-left: auto !important;
+  justify-content: space-around;
+}
