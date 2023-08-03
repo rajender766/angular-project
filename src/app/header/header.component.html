@@ -1,9 +1,7 @@
 <div class="main-cont">
   <h1 class="main-head">e-Kart</h1>
   <div class="main-anchot">
-    <a href="/home">Home</a>
-    <a href="/profile">Profile</a>
-    <a href="/about">About</a>
+    <a *ngFor="let menu of mainMenuItems" href="/lk">{{ menu }}</a>
   </div>
 </div>
 <app-top-menu></app-top-menu>

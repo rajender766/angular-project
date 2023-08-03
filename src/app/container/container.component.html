@@ -1,6 +1,16 @@
 <div class="ekart--product--container">
   <app-search></app-search>
-  <!-- <img
+  <div *ngFor="let item of listOfStrings">
+    <p>current Element : {{ item }}</p>
+  </div>
+</div>
+
+<!-- <input [value]="name" (input)="onNameChange($event)" /> 
+  <br />
+  <br />
+  <p>My name is : {{ name }}</p> -->
+
+<!-- <img
     class="pro-img"
     src="/assets/images/{{ product.pImage }}"
     alt="productImg"
@@ -29,9 +39,3 @@
   <button class="btn btn-sm btn-success m-2" (click)="incrementCartVlaue()">
     +
   </button> -->
-</div>
-
-<!-- <input [value]="name" (input)="onNameChange($event)" /> 
-  <br />
-  <br />
-  <p>My name is : {{ name }}</p> -->
