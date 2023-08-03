@@ -1,0 +1,20 @@
+<div class="ekart-products-container">
+  <div *ngFor="let prod of products">
+    <div>
+      <div>
+        <img [src]="prod.imageUrl" />
+      </div>
+      <div>
+        <p>{{ prod.price }}</p>
+        <p>{{ prod.name }}</p>
+        <p>{{ prod.gender }} -> {{ prod.category }} -> {{ prod.brand }}</p>
+        <p>{{ prod.description }}</p>
+        <div class="d-flex align-items-center m-0">
+          <p *ngFor="let col of prod.color" class="m-2">{{ col }}</p>
+        </div>
+
+        <p>Only items {{ prod.items_left }} Left</p>
+      </div>
+    </div>
+  </div>
+</div>
