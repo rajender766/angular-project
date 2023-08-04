@@ -8,6 +8,8 @@ import { TopHeaderComponent } from './top-header/top-header.component';
 import { TopMenuComponent } from './header/top-menu/top-menu.component';
 import { SearchComponent } from './container/search/search.component';
 import { ContainerComponent } from './container/container.component';
+import { ProductListComponent } from './container/product-list/product-list.component';
+import { ProductComponent } from './container/product-list/product/product.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ContainerComponent } from './container/container.component';
     TopMenuComponent,
     ContainerComponent,
     SearchComponent,
+    ProductListComponent,
+    ProductComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
