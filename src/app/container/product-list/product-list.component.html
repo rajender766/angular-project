@@ -1,7 +1,7 @@
 <app-filter
   [all]="totalProducts"
   [inStock]="totalProductsInStock"
-  [outOfStock]="totalProducts - totalProductsInStock"
+  [outOfStock]="totalProducts-totalProductsInStock"
   (selectedFilterRadioButtonChanged)="onFilterChanged($event)"
 ></app-filter>
 <div class="ekart-products-container">

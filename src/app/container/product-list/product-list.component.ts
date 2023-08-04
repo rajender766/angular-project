@@ -118,7 +118,7 @@ export class ProductListComponent {
 
   selectedFilterRadio: string = 'all';
 
-  onFilterChanged(value: string) {
+  onFilterChanged(value: any) {
     this.selectedFilterRadio = value;
   }
 }
