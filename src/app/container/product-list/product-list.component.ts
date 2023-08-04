@@ -20,7 +20,8 @@ export class ProductListComponent {
       price: 160,
       is_in_inventory: false,
       items_left: 3,
-      imageUrl: 'http://static,nike.com/a/images/c_limited.png',
+      imageUrl:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f8dfa191-60b3-44c1-b730-b25e0a908c35/air-force-1-07-easyon-shoes-LKXPhZ.png',
       slug: 'nike-react-infinity-run-flyknit',
     },
     {
@@ -37,7 +38,8 @@ export class ProductListComponent {
       price: 160,
       is_in_inventory: true,
       items_left: 3,
-      imageUrl: 'http://static,nike.com/a/images/c_limited.png',
+      imageUrl:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21d38052-598b-44f6-a857-123c9f72b015/air-force-1-07-shoes-WrLlWX.png',
       slug: 'nike-react-infinity-run-flyknit',
     },
     {
@@ -54,7 +56,8 @@ export class ProductListComponent {
       price: 160,
       is_in_inventory: false,
       items_left: 3,
-      imageUrl: 'http://static,nike.com/a/images/c_limited.png',
+      imageUrl:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/133d8e36-a9d2-4171-8fd3-6eabf13c483b/infinityrn-4-se-road-running-shoes-STv3Zz.png',
       slug: 'nike-react-infinity-run-flyknit',
     },
     {
@@ -70,7 +73,8 @@ export class ProductListComponent {
       price: 160,
       is_in_inventory: true,
       items_left: 3,
-      imageUrl: 'http://static,nike.com/a/images/c_limited.png',
+      imageUrl:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0fd1487b-306c-4b70-a96a-cd6ac99e7d61/air-max-1-shoes-ZCSX34.png',
       slug: 'nike-react-infinity-run-flyknit',
     },
     {
@@ -87,7 +91,8 @@ export class ProductListComponent {
       price: 160,
       is_in_inventory: false,
       items_left: 3,
-      imageUrl: 'http://static,nike.com/a/images/c_limited.png',
+      imageUrl:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21d38052-598b-44f6-a857-123c9f72b015/air-force-1-07-shoes-WrLlWX.png',
       slug: 'nike-react-infinity-run-flyknit',
     },
     {
@@ -103,7 +108,8 @@ export class ProductListComponent {
       price: 160,
       is_in_inventory: true,
       items_left: 3,
-      imageUrl: 'http://static,nike.com/a/images/c_limited.png',
+      imageUrl:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f8dfa191-60b3-44c1-b730-b25e0a908c35/air-force-1-07-easyon-shoes-LKXPhZ.png',
       slug: 'nike-react-infinity-run-flyknit',
     },
   ];

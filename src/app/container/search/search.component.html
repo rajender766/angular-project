@@ -3,17 +3,10 @@
 >
   <input
     class="form-controll w-100 border border-none"
-    [(ngModel)]="searchText"
     type="search"
+    #searchInput
   />
-  <button
-    [ngClass]="{
-      'btn-dark': !searchText,
-      'btn-primary': searchText,
-    }"
-    class="btn btn-md"
-    [disabled]="!searchText"
-  >
+  <button class="btn btn-md btn-dark" (click)="setSearchText(searchInput)">
     Search
   </button>
 </div>
@@ -23,3 +16,8 @@
   </p>
 </div>
 <!-- <div><h3>SHOES</h3></div> -->
+
+<!-- [ngClass]="{
+      'btn-dark': !searchInput.value,
+      'btn-primary': searchInput.value,
+    }" -->
