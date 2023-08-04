@@ -1,0 +1,32 @@
+<div>
+  <div>
+    <div>
+      <img class="pro-img" src="assets\images\IMG-20201231-WA0055.jpg" />
+    </div>
+    <div>
+      <p>${{ product.price }}</p>
+      <div *ngIf="product.disscount">
+        {{ ((product.disscount / product.price) * 100).toFixed(0) }} % off
+      </div>
+      <p>{{ product.name }}</p>
+      <p>
+        {{ product.gender }} -> {{ product.category }} -> {{ product.brand }}
+      </p>
+      <p>{{ product.description }}</p>
+      <div class="d-flex align-items-center m-0">
+        <p *ngFor="let col of product.color" class="m-2">{{ col }}</p>
+      </div>
+
+      <p>Only items {{ product.items_left }} Left</p>
+    </div>
+    <div
+      class="ekart-productuct-avail my-3"
+      [ngStyle]="{
+        fontWeight: 'bold',
+        color: product.is_in_inventory ? 'green' : 'red'
+      }"
+    >
+      {{ product.is_in_inventory ? "Available In Stock" : "Not In Stock" }}
+    </div>
+  </div>
+</div>
