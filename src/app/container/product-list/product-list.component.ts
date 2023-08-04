@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'product-list',
@@ -59,7 +59,7 @@ export class ProductListComponent {
     },
     {
       id: 4,
-      name: 'Nike React Infinity Run Flyknit',
+      name: 'React Infinity Run Flyknit',
       description:
         'Lorem Ispum is simply dummy text of the priniting and typesetting industry, Lorem Ipsum has been the leading',
       brand: 'Nike',
@@ -92,7 +92,7 @@ export class ProductListComponent {
     },
     {
       id: 6,
-      name: 'Nike React Infinity Run Flyknit',
+      name: 'React Infinity Run Flyknit',
       description:
         'Lorem Ispum is simply dummy text of the priniting and typesetting industry, Lorem Ipsum has been the leading',
       brand: 'Nike',
@@ -112,6 +112,9 @@ export class ProductListComponent {
   totalProductsInStock: number = this.products.filter(
     (p) => p.is_in_inventory === true
   ).length;
+
+  @Input()
+  searchText: string = '';
 
   selectedFilterRadio: string = 'all';
 
