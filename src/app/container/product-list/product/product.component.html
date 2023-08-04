@@ -15,9 +15,6 @@
     </div>
     <div>
       <p>${{ product.price }}</p>
-      <div *ngIf="product.disscount">
-        {{ ((product.disscount / product.price) * 100).toFixed(0) }} % off
-      </div>
       <p>{{ product.name }}</p>
       <p>
         {{ product.gender }} -> {{ product.category }} -> {{ product.brand }}
