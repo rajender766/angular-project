@@ -106,22 +106,16 @@ export class ProductListComponent {
       imageUrl: 'http://static,nike.com/a/images/c_limited.png',
       slug: 'nike-react-infinity-run-flyknit',
     },
-    // {
-    //   id: 6,
-    //   name: 'Nike React Infinity Run Flyknit',
-    //   description:
-    //     'Lorem Ispum is simply dummy text of the priniting and typesetting industry, Lorem Ipsum has been the leading',
-    //   brand: 'Nike',
-    //   gender: 'MEN',
-    //   category: 'Running',
-    //   disscount: 80,
-    //   size: [6, 7, 8, 9, 10],
-    //   color: ['white', 'black', 'blue', 'gray'],
-    //   price: 160,
-    //   is_in_inventory: false,
-    //   items_left: 3,
-    //   imageUrl: 'http://static,nike.com/a/images/c_limited.png',
-    //   slug: 'nike-react-infinity-run-flyknit',
-    // },
   ];
+
+  totalProducts: number = this.products.length;
+  totalProductsInStock: number = this.products.filter(
+    (p) => p.is_in_inventory === true
+  ).length;
+
+  selectedFilterRadio: string = 'all';
+
+  onFilterChanged(value: string) {
+    this.selectedFilterRadio = value;
+  }
 }
