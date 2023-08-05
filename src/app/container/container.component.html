@@ -3,5 +3,6 @@
   <product-list [searchText]="searchText" #productListComponent></product-list>
   <product-details
     *ngIf="productListComponent.selectedProduct"
+    [productListComp]="productListComponent"
   ></product-details>
 </div>
