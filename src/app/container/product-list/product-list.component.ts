@@ -79,7 +79,7 @@ export class ProductListComponent {
     },
     {
       id: 5,
-      name: 'Nike React Infinity Run Flyknit',
+      name: 'Puma Infinity Run Flyknit',
       description:
         'Lorem Ispum is simply dummy text of the priniting and typesetting industry, Lorem Ipsum has been the leading',
       brand: 'Nike',
