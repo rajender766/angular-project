@@ -53,11 +53,12 @@
   float: right;
   font-size: 14px;
   margin-top: 10px;
-  margin-right: -10px;
+  margin-right: 10px;
   padding: 5px 10px;
   background-color: #ffc000;
   color: #28282b;
   font-weight: bold;
+  border-radius: 7px;
 }
 
 .ekart--add--to--price {

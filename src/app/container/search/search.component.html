@@ -1,24 +1,11 @@
-<div
-  class="border border-1 rounded-2 border-dark d-flex justify-content-between"
->
-  <input
-    class="form-controll w-100 border border-none"
-    type="search"
-    #searchInput
-  />
-  <button class="btn btn-md btn-dark" (click)="setSearchText(searchInput)">
+<div class="ekart--search--product">
+  <input class="ekart-search-product-input" type="search" #searchInput />
+  <button class="btns btns-search" (click)="setSearchText(searchInput)">
     Search
   </button>
 </div>
-<div class="mt-3">
+<div class="ekart-search-result-for">
   <p *ngIf="searchText !== ''">
-    <strong class="me-1">Search result for: </strong>{{ searchText }}
+    <strong>Search result for:</strong> {{ searchText }}
   </p>
 </div>
-
-<!-- <div><h3>SHOES</h3></div> -->
-
-<!-- [ngClass]="{
-      'btn-dark': !searchInput.value,
-      'btn-primary': searchInput.value,
-    }" -->

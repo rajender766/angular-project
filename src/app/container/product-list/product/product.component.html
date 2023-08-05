@@ -1,42 +1,35 @@
-<div class="product-container">
-  <div>
-    <div class="bg-light">
-      <div class="d-flex justify-content-between p-1">
-        <!-- <i class="bi bi-suit-heart"></i> -->
-        <i class="fa-regular fa-heart icon-size"></i>
-        <div
-          *ngIf="product.disscount"
-          class="bg-warning border rounded-1 me-1 p-1"
-        >
-          {{ ((product.disscount / product.price) * 100).toFixed(0) }} % off
-        </div>
-      </div>
-      <img class="pro-img" [src]="product.imageUrl" alt="produt-image" />
+<div class="ekart--product--item">
+  <div class="ekart-wishlist-sale-container">
+    <div class="ekart--add--to--wishlist">
+      <!-- <i class="fa fa-heart-o" aria-hidden="false"></i> -->
+      <i class="fa-regular fa-heart icon-size"></i>
     </div>
-    <div>
-      <p>${{ product.price }}</p>
-      <div *ngIf="product.disscount">
-        {{ ((product.disscount / product.price) * 100).toFixed(0) }} % off
-      </div>
-      <p>{{ product.name }}</p>
-      <p>
-        {{ product.gender }} -> {{ product.category }} -> {{ product.brand }}
-      </p>
-      <!-- <p>{{ product.description }}</p> -->
-      <div class="d-flex align-items-center m-0">
-        <p *ngFor="let col of product.color" class="m-2">{{ col }}</p>
-      </div>
-
-      <p>Only items {{ product.items_left }} Left</p>
+    <div class="ekart-on-sale-tag" *ngIf="product.disscount">
+      {{ ((product.disscount / product.price) * 100).toFixed(0) }} % OFF
     </div>
-    <div
-      class="ekart-productuct-avail my-3"
-      [ngStyle]="{
-        fontWeight: 'bold',
-        color: product.is_in_inventory ? 'green' : 'red'
-      }"
-    >
-      {{ product.is_in_inventory ? "Available In Stock" : "Not In Stock" }}
-    </div>
+  </div>
+  <div class="ekart--product--image">
+    <img
+      [src]="product.imageUrl"
+      alt="produt-image"
+      class="ekart--product--image"
+    />
+  </div>
+  <div class="ekart--add--to--price">{{ product.price }}</div>
+  <div class="ekart--product--name">{{ product.name }}</div>
+  <div class="ekart--product--category">
+    {{ product.gender }} -> {{ product.category }} -> {{ product.brand }}
+  </div>
+  <div class="ekart--product--available-colors">
+    colors: {{ product.color.length }}. Best Seller
+  </div>
+  <div
+    class="ekart-productuct-avail my-3"
+    [ngStyle]="{
+      fontWeight: 'bold',
+      color: product.is_in_inventory ? 'green' : 'red'
+    }"
+  >
+    {{ product.is_in_inventory ? "Available In Stock" : "Not In Stock" }}
   </div>
 </div>
